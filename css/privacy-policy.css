@@ -1,0 +1,64 @@
+@font-face {
+    font-family: AbrilFatface-Regular;
+    src: url(../fonts/AbrilFatface-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+
+table{
+    width: 100%; 
+    border-collapse: collapse;
+    border: 1px solid #9A7748;
+    margin-bottom: 16px;
+}
+td{
+    padding: 10px;
+    color: #9A7748;
+    font-weight: bold;
+    width: 50%;
+    border: 1px solid #9A7748;
+}
+tr{
+    border: 1px solid #9A7748;
+}
+
+.Cap{
+    text-transform: capitalize !important;
+}
+
+h1, h2, p, ul{
+    color: #9A7748;
+}
+li{
+    margin-bottom: 20px;
+}
+a{
+    color:#9A7748;
+    text-decoration: underline !important;
+}
+h1, h2{
+    font-family: AbrilFatface-Regular;
+}
+p, li{
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    font-weight: bold;
+}
+h1{
+    margin-bottom: 5%;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px){
+    h1, h2{
+        font-size: 35px;
+    }
+}

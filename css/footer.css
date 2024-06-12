@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 11px !important;
+}
+
+.copyright, .creator{
+    text-align: center;
+    font-family: Montserrat-Regular;
+    color: #9A7748;
+    margin: 0;
+    font-size: 11px !important;
+}
+.links{
+    text-align: center;
+    color: #9A7748;
+    font-family: Montserrat-Regular;
+    margin: 0;
+    font-size: 11px !important;
+}
+.links a, .creator a{
+    color: #9A7748;
+    text-decoration: none !important;
+    font-size: 11px !important;
+}

@@ -1,0 +1,162 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+html{
+    min-width: 320px;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.logo{
+    max-height: 150px;
+    width:100%;
+    max-width: 290px;
+}
+
+.desktopNav{
+    width: 700px;
+    margin: 0;
+    height: 30px;
+}
+
+.desktopNav ul{
+    color: #9A7748;
+    font-family: Montserrat-Regular;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+}
+
+.mobileNav ul{
+    color: #9A7748;
+    font-family: Montserrat-Regular;
+    list-style: none;
+    padding-right: 16px;
+    padding-left: 16px;
+
+}
+.mobileNav ul li{
+    margin-top: 15px;
+    border-bottom: 1px solid #9A7748;
+    
+}
+
+.mobileNav ul li a{
+    display: block;
+    text-transform:uppercase;
+    text-decoration: none !important;
+    color: #9A7748;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.desktopNav ul li a{
+    display: block;
+    text-transform:uppercase;
+    text-decoration: none !important;
+    color: #9A7748;
+    font-weight: bold;
+    padding-bottom: 10px;
+    height: 30px;
+}
+
+.desktopNav ul li a:hover{
+    border-bottom: 2px solid #9A7748;
+}
+
+
+.burgerIcon{
+    display: none;
+}
+
+.closeIcon{
+    color: #9A7748;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 13px;
+}
+
+.closeIcon span{
+    font-size: 60px;
+    line-height: 50px;
+}
+
+.mobileNavContainer{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    left: 100%;
+    height: 100vh;
+}
+.mobileHeader{
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    position: absolute;
+    background-color: white;
+}
+.show {
+    left:0%;
+}
+
+.hide{
+    left:100%;
+}
+
+.burgerIcon:hover, .closeIcon:hover{
+    cursor: pointer;
+}
+.mobileNav{
+    position: absolute;
+    top: 150px;
+    background-color: white;
+    width:100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.mobileNavContainer{
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    
+    .mobileNavContainer{
+        display: block;
+    }
+    .desktopNav{
+        display: none;
+    }
+    
+    .burgerIcon{
+        display: block;
+        width: 40px;
+        height: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    .burgerIcon div{
+        width:100%;
+        height: 3px;
+        background-color: #9A7748;
+    }
+}
